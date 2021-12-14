@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Куклина</title>
+    <meta charset="utf-8">
+</head>
+<h1>Ответ:</h1>
+<body>
+    <script type="text/javascript">
+        var n = Number(prompt("Введите количество (n):"));
+        var x = Number(prompt("Введите число больше нуля:"));
+        var b = 0;
+        for(var a=0; a<=n; a++){
+            b=b+((((-1)**a)*(x**(2*a+1)))/(2*a+1));
+        }
+        document.writeln(b);
+    </script>
+</body>
+</html>

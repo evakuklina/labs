@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Куклина</title>
+    <meta charset="utf-8">
+    <script type="text/javascript">
+        function func(){
+            var x = Number (document.forms["frm"].elements["varx"].value);
+            var n = Number (document.forms["frm"].elements["varn"].value);
+            var b = 0;
+            for(var a=0; a<=n; a++){
+            b=b+((((-1)**a)*(x**(2*a+1)))/(2*a+1));
+            }
+            document.writeln(b);
+        }
+      
+    </script>
+</head>
+<body>
+    <form id="frm">
+        <p>Введите число x (больше нуля):</p>
+        <input type="text" name="varx" id="x">
+        <p>Введите число n:</p>
+        <input type="text" name="varn" id="n">
+        <input type="submit" value="OK" onclick="func()">
+    </form>
+<h2>Ответ:</h2>
+</body>
+</html>
